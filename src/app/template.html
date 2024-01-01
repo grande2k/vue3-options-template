@@ -1,0 +1,16 @@
+<template v-if="!error">
+    <div id="base-layout" class="flex column">
+        <Header />
+        
+        <main class="main">
+            <router-view />
+        </main>
+        
+        <Footer />
+    </div>
+</template>
+
+<div class="error flex column center" v-else>
+    <img src="/src/assets/images/error.svg" alt="error">
+    <p>An error occurred while loading application resources.</p>
+</div>
