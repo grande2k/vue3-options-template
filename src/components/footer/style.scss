@@ -5,6 +5,6 @@
         margin: 0;
         text-align: center;
         color: $white;
-        font-size: 0.75rem;
+        @include font-size(12px);
     }
 }
